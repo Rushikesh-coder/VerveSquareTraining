@@ -17,7 +17,7 @@ public class LoopsControlStatements {
 		}
 	}
 
-	public void whileLoopStatement()  //ehile loop
+	public void whileLoopStatement()  //while loop
 	{
 		System.out.println("Printing using while Loop");
 		int intCount = 0;
@@ -79,7 +79,8 @@ public class LoopsControlStatements {
 
 	}
 
-	public void breakStatement(String breakFromHere) {
+	public void breakStatement(String breakFromHere)  //Break Statement 
+	{
 		System.out.println("Break Statement in for Loop");
 		for (int intIndex = 0; intIndex < intCountryCode.length; intIndex++) {
 
@@ -91,7 +92,8 @@ public class LoopsControlStatements {
 		}
 	}
 
-	public void continueStatement(String Skipthis) {
+	public void continueStatement(String Skipthis) // Continue Statement
+	{
 		System.out.println("Continue Statement in for Loop");
 		for (int intIndex = 0; intIndex < intCountryCode.length; intIndex++) {
 
