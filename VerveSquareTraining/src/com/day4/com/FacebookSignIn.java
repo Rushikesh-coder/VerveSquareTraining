@@ -27,23 +27,29 @@ public class FacebookSignIn {
 	
 	public void setName() {
 
-		String strName[]= {"Paresh","Rakesh","Akshay","Abhishekh","Rupam","Rohit","Rushikesh","Prakash","mahesh","Rajesh","Rutwik"};
-		String strRandomName=strName[objRandomClass.nextInt(strName.length-1)];
-		System.out.println("First Name Entered :   "+strRandomName);
+		String strRandomName="";
+		for (int intIndex = 0; intIndex < 8; intIndex++) {
+			char random = (char) (objRandomClass.nextInt(25) + 'a');
+			strRandomName = strRandomName + random;
+		}
+		System.out.println("First Name is : " + strRandomName);
 	}
 
 	public void setLastName() {
 
-		String strLastName[]= {"Patil","Thakare","Deshmukh","Sonawne","Salunkhe","Pardeshi","Patnayak","Pakhle","Somwanshi"};
-		
-		String strRandomLastName=strLastName[objRandomClass.nextInt(strLastName.length-1)];
-		System.out.println("Last Name Entered :   "+strRandomLastName);
+		String strRandomLastName = "";
+
+		for (int intIndex = 0; intIndex < 6; intIndex++) {
+			char random = (char) (objRandomClass.nextInt(26) + 'a');
+			strRandomLastName = strRandomLastName + random;
+		}
+		System.out.println("Last Name is : " + strRandomLastName);
 	}
 
 	public void setMobileNumber() {
 
-		String strRandomMobileNumber = "";
-		for(int intIndex=0;intIndex<10;intIndex++)
+		String strRandomMobileNumber = "97";
+		for(int intIndex=0;intIndex<8;intIndex++)
 		{
 			strRandomMobileNumber=strRandomMobileNumber+""+objRandomClass.nextInt(9);
 		}
@@ -88,7 +94,7 @@ public class FacebookSignIn {
 	public void setGender() {
 
 		String strGender[]= {"Male","Female","Custom"};
-		String strRandomRedio=strGender[objRandomClass.nextInt(2)];
+		String strRandomRedio=strGender[objRandomClass.nextInt(strGender.length-1)];
 		System.out.println("Gender is Selected : "+strRandomRedio);
 		
 	}
