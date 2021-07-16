@@ -23,7 +23,8 @@ public class FacebookSignIn {
 
 	}
 
-	Random objRandomClass=new Random();
+	Random objRandomClass=new Random(); // Random class
+	
 	public void setName() {
 
 		String strName[]= {"Paresh","Rakesh","Akshay","Abhishekh","Rupam","Rohit","Rushikesh","Prakash","mahesh","Rajesh","Rutwik"};
@@ -72,7 +73,7 @@ public class FacebookSignIn {
 		
 		int strYearTemp = 0;
 		int strYear = 0;            // Year
-		for (int i = 0; i < 100; i++) {
+		for (int intIndex = 0; intIndex < 100; intIndex++) {
 			strYearTemp = objRandomClass.nextInt(2021);
 			if (strYearTemp > 1905) {
 				strYear = strYearTemp;
